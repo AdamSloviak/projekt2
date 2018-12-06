@@ -4,7 +4,7 @@
 
 
 struct zaznam{
-	char meno_priezvisko[30];
+	char name_surname[30];
 	char pohlavie;
 	int rok_narodenia;
 	char SPZ[8];
