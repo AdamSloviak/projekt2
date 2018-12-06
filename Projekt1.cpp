@@ -63,7 +63,7 @@ int main(){
 				pole = NULL;
 			}
 			if((pole = (struct zaznam*)malloc((sizeof(struct zaznam))*pocet)) == NULL){
-				printf("Pole nie je naplnene");
+				printf("Pole este nie je naplnene");
 			}
 			else{
 				rewind(f);
