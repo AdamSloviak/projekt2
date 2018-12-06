@@ -2,8 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
 
+<<<<<<< HEAD
 struct zaznam{
 	char meno_priezvisko[30];
+=======
+
+struct zaznam{
+	char name_surname[30];
+>>>>>>> development
 	char pohlavie;
 	int rok_narodenia;
 	char SPZ[8];
@@ -12,7 +18,11 @@ struct zaznam{
 	int datum_priestupku;
 };
 struct novy_zaznam{
+<<<<<<< HEAD
 	char meno_priezvisko[30];
+=======
+	char name_surname[30];
+>>>>>>> development
 	char pohlavie;
 	int rok_narodenia;
 	char SPZ[8];
@@ -62,13 +72,21 @@ int main(){
 				pole = NULL;
 			}
 			if((pole = (struct zaznam*)malloc((sizeof(struct zaznam))*pocet)) == NULL){
+<<<<<<< HEAD
 				printf("Pole nie je naplnene");
+=======
+				printf("Pole este nie je naplnene");
+>>>>>>> development
 			}
 			else{
 				rewind(f);
 			
 				for(int i = 0; i < pocet; i++){
+<<<<<<< HEAD
 					fgets(pole[i].meno_priezvisko, 30, f);	
+=======
+					fgets(pole[i].name_surname, 30, f);	
+>>>>>>> development
 					fscanf(f," %c\n", &pole[i].pohlavie);					
 					fscanf(f," %d\n", &pole[i].rok_narodenia);					
 					fscanf(f," %s\n", pole[i].SPZ);					
@@ -81,7 +99,11 @@ int main(){
 		else if(c == 'v'){
 				if(pole != NULL){
 					for(int i = 0; i < pocet; i++){
+<<<<<<< HEAD
 						printf("meno priezvisko: %s\n", pole[i].meno_priezvisko);
+=======
+						printf("meno priezvisko: %s\n", pole[i].name_surname);
+>>>>>>> development
 						printf("pohlavie: %c\n", pole[i].pohlavie);
 						printf("rok narodenia: %d\n", pole[i].rok_narodenia);
 						printf("SPZ: %s\n", pole[i].SPZ);
@@ -100,7 +122,11 @@ int main(){
 
 				for(int i = 0; i < pocet; i++){
 					if(datum == (pole[i].datum_priestupku/10000) && pole[i].priestupok == '0'){
+<<<<<<< HEAD
 						printf("meno priezvisko: %s\n", pole[i].meno_priezvisko);
+=======
+						printf("meno priezvisko: %s\n", pole[i].name_surname);
+>>>>>>> development
 						printf("SPZ: %s\n", pole[i].SPZ);
 						printf("datum priestupku: %d\n", pole[i].datum_priestupku);
 						printf("\n");
@@ -143,7 +169,11 @@ int main(){
 					palindrom = strcmp(reverse, pole[i].SPZ);
 
 					if(palindrom == 0){
+<<<<<<< HEAD
 						printf("%s %s\n", pole[i].meno_priezvisko, pole[i].SPZ);
+=======
+						printf("%s %s\n", pole[i].name_surname, pole[i].SPZ);
+>>>>>>> development
 					}
 				}
 			}
@@ -182,7 +212,11 @@ int main(){
 				int x = 0;
 				for(int j = 0; j < pocet; j++){
 					if(pole[j].pohlavie != 'A'){
+<<<<<<< HEAD
 						strcpy(nove_pole[x].meno_priezvisko,pole[j].meno_priezvisko);
+=======
+						strcpy(nove_pole[x].name_surname,pole[j].name_surname);
+>>>>>>> development
 						nove_pole[x].pohlavie = pole[j].pohlavie;
 						nove_pole[x].rok_narodenia = pole[j].rok_narodenia;
 						strcpy(nove_pole[x].SPZ, pole[j].SPZ);
@@ -193,7 +227,11 @@ int main(){
  					}
 				}
 				for(int h = 0; h < novy_pocet; h++){
+<<<<<<< HEAD
 						printf("meno priezvisko: %s\n", nove_pole[h].meno_priezvisko);
+=======
+						printf("meno priezvisko: %s\n", nove_pole[h].name_surname);
+>>>>>>> development
 						printf("pohlavie: %c\n", nove_pole[h].pohlavie);
 						printf("rok narodenia: %d\n", nove_pole[h].rok_narodenia);
 						printf("SPZ: %s\n", nove_pole[h].SPZ);

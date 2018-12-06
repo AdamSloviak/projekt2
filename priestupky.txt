@@ -38,6 +38,7 @@ SA555AA
 447
 20181106
 
+<<<<<<< HEAD
 Vincent Sikula
 M
 1945
@@ -46,6 +47,8 @@ PK642SC
 32
 20171103
 
+=======
+>>>>>>> development
 Vincent van Gogh
 M
 1999
@@ -53,3 +56,14 @@ PD787DP
 0
 2000
 20161117
+<<<<<<< HEAD
+=======
+
+Alfony Heghe
+M
+1990
+PD787DP
+0
+2002
+20161117
+>>>>>>> development
